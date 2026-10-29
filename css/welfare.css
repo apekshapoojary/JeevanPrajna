@@ -1,0 +1,177 @@
+/* ============================================================
+   welfare.css — Welfare & Pensions Directory Styles
+   JeevanPrajna Senior Care Portal
+   ============================================================ */
+
+/* Scheme Tabs Bar */
+.scheme-tabs-bar {
+  background: #ffffff;
+  border-bottom: 2px solid var(--slate-border);
+  position: sticky;
+  top: 76px;
+  z-index: 400;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.scheme-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px 0;
+  scrollbar-width: none;
+}
+.scheme-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.scheme-tab {
+  background: #f8fafc;
+  border: 1px solid var(--slate-border);
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+.scheme-tab:hover {
+  background: #f1f5f9;
+  color: var(--primary);
+}
+.scheme-tab.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* Scheme Detail Cards */
+.scheme-detail-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.scheme-detail-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: var(--shadow-hover);
+}
+
+.scheme-dc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.scheme-dc-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.scheme-official-link {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--primary-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.scheme-official-link:hover {
+  text-decoration: underline;
+}
+
+.scheme-dc-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--slate-dark);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.scheme-dc-desc {
+  font-size: 14.5px;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.scheme-dc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  background: #f8fafc;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+
+.scheme-dc-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.scheme-dc-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--slate-muted);
+}
+
+.scheme-dc-value {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--slate-dark);
+  line-height: 1.5;
+}
+
+.scheme-steps-box {
+  background: #eff6ff;
+  border-left: 3px solid var(--primary-light);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 16px 20px;
+  font-size: 13.5px;
+}
+
+.scheme-steps-box h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scheme-steps-box ol {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #1e293b;
+}
+
+.scheme-steps-box p {
+  color: #1e293b;
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scheme-detail-card { padding: 22px 18px; }
+  .scheme-dc-grid { grid-template-columns: 1fr; }
+  .scheme-dc-name { font-size: 19px; }
+}

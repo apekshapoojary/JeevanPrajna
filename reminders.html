@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JeevanPrajna Senior Care Schedule & Medication Tracker — Private, local medication alerts, doctor appointment reminders, and daily health checks stored strictly on your device." />
+  <title>Daily Care & Medication Schedule | JeevanPrajna</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reminders.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Institutional Bar -->
+  <div class="institutional-bar">
+    <div class="container">
+      <div class="inst-inner">
+        <div class="inst-left">
+          <span class="inst-flag"><i class="fas fa-lock"></i> 100% Private Local Schedule — No Personal Data Transmitted</span>
+        </div>
+        <div class="inst-right">
+          <span class="inst-contact"><i class="fas fa-print"></i> Ready for Wall/Bedside Printing</span>
+          <span class="inst-divider">|</span>
+          <span class="inst-contact"><i class="fas fa-shield-halved"></i> DPDP Act 2023 Compliant</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="JeevanPrajna Official Logo" class="brand-logo-img" width="48" height="48" />
+          <div>
+            <div class="brand-name">Jeevan<span>Prajna</span></div>
+            <div class="brand-tagline">National Elderly Care & Senior Citizens Portal</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="health.html" class="nav-link">Health & Medicines</a></li>
+            <li><a href="emergency.html" class="nav-link">Emergency & First Aid</a></li>
+            <li><a href="welfare.html" class="nav-link">Pensions & Schemes</a></li>
+            <li><a href="community.html" class="nav-link">Community & NGOs</a></li>
+            <li><a href="reminders.html" class="nav-link active">Care Schedule</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="emergency.html" class="btn-sos" id="sosBtnNav"><i class="fas fa-phone-alt"></i> SOS 112</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <div>
+          <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Daily Care Schedule</div>
+          <h1 class="page-title">Personal Care & Medication Schedule</h1>
+          <p class="page-desc">Easily organise medication timings, blood pressure logs, and specialist follow-up appointments. Everything is saved safely in this browser on your device.</p>
+        </div>
+        <div class="page-header-badge" style="background:#f5f3ff;border-color:#ddd6fe;color:#7c3aed;">
+          <i class="fas fa-shield-cat"></i> Private & Stored Locally
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Reminders Interface -->
+  <section class="section" id="reminders-main">
+    <div class="container">
+
+      <!-- Quick Preset Suggestions Bar -->
+      <div class="quick-presets-card card mb-6">
+        <div class="qpc-header">
+          <i class="fas fa-wand-magic-sparkles text-primary"></i>
+          <div>
+            <strong>Quick Routine Presets for Indian Seniors:</strong>
+            <span class="text-small text-muted d-block">Tap any common routine below to automatically populate the scheduler form:</span>
+          </div>
+        </div>
+        <div class="qpc-buttons">
+          <button type="button" class="preset-chip" onclick="applyPreset('Thyroid Pill (Thyronorm)', 'medication', '06:30', 'daily', 'Strictly on empty stomach with plain water, 45m before morning tea')">
+            <i class="fas fa-pills"></i> Morning Thyroid (06:30 AM)
+          </button>
+          <button type="button" class="preset-chip" onclick="applyPreset('Morning BP Check', 'checkup', '07:30', 'daily', 'Rest 5 minutes seated before checking. Target: ~130/80')">
+            <i class="fas fa-stethoscope"></i> Morning BP Check (07:30 AM)
+          </button>
+          <button type="button" class="preset-chip" onclick="applyPreset('Blood Pressure Medicine', 'medication', '08:30', 'daily', 'Take with breakfast. Drink full glass of water.')">
+            <i class="fas fa-pills"></i> Morning BP Tablet (08:30 AM)
+          </button>
+          <button type="button" class="preset-chip" onclick="applyPreset('Metformin (Diabetes)', 'medication', '13:00', 'daily', 'Take with or immediately after lunch to prevent stomach upset.')">
+            <i class="fas fa-capsules"></i> Afternoon Sugar Tablet (01:00 PM)
+          </button>
+          <button type="button" class="preset-chip" onclick="applyPreset('Evening Park Walk', 'exercise', '17:30', 'daily', 'Wear non-skid walking shoes. 30 minutes gentle flat walk.')">
+            <i class="fas fa-person-walking"></i> Evening Walk (05:30 PM)
+          </button>
+          <button type="button" class="preset-chip" onclick="applyPreset('Cholesterol / Statin Tablet', 'medication', '21:30', 'daily', 'Take after dinner at bedtime.')">
+            <i class="fas fa-moon"></i> Bedtime Statin (09:30 PM)
+          </button>
+        </div>
+      </div>
+
+      <div class="reminders-layout">
+        <!-- Left: Form Column -->
+        <div class="reminders-form-col">
+          <div class="card">
+            <h3 class="card-title"><i class="fas fa-plus-circle text-primary"></i> Add Schedule Entry</h3>
+
+            <form id="reminderForm" onsubmit="event.preventDefault(); addReminder();">
+              <div class="form-group">
+                <label class="form-label" for="remType">Routine Category *</label>
+                <select id="remType" class="form-select" required>
+                  <option value="medication">Medication / Prescription</option>
+                  <option value="appointment">Doctor / Clinic Follow-up</option>
+                  <option value="checkup">Blood Pressure / Sugar Check</option>
+                  <option value="exercise">Walking / Joint Mobility Yoga</option>
+                  <option value="other">General Care Prompt</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="remTitle">Title / Medicine Name *</label>
+                <input type="text" id="remTitle" class="form-input" placeholder="e.g. Telma 40mg or Dr. Sharma Consultation" required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="remDate">Scheduled Date *</label>
+                  <input type="date" id="remDate" class="form-input" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="remTime">Time *</label>
+                  <input type="time" id="remTime" class="form-input" value="08:00" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="remFreq">Recurrence Frequency</label>
+                <select id="remFreq" class="form-select">
+                  <option value="daily">Every Day (Daily Routine)</option>
+                  <option value="once">One-Time Only</option>
+                  <option value="weekly">Once Every Week</option>
+                  <option value="monthly">Once Every Month</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="remNotes">Doctor's Instructions / Food Notes</label>
+                <textarea id="remNotes" class="form-textarea" placeholder="e.g. Take after breakfast with water; do not take on empty stomach..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-calendar-plus"></i> Save to My Schedule
+              </button>
+            </form>
+          </div>
+
+          <!-- Privacy Guarantee Box -->
+          <div class="alert alert-info mt-4">
+            <i class="fas fa-lock"></i>
+            <div>
+              <strong>Complete Confidentiality:</strong> Your health schedules are saved entirely within this web browser's local memory (HTML5 LocalStorage). No accounts, logins, or cloud trackers are used.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Reminder List Column -->
+        <div class="reminders-list-col">
+          <div class="reminders-list-header">
+            <div>
+              <h3 class="section-title mb-1" style="font-size:22px;">Active Schedule</h3>
+              <p class="text-muted text-small">Review and manage your daily healthcare tasks.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" onclick="window.print()">
+              <i class="fas fa-print"></i> Print Schedule for Wall
+            </button>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="rem-filters-bar mb-4">
+            <button type="button" class="rem-filter active" onclick="filterReminders('all')">All Entries</button>
+            <button type="button" class="rem-filter" onclick="filterReminders('medication')"><i class="fas fa-pills"></i> Medicines</button>
+            <button type="button" class="rem-filter" onclick="filterReminders('checkup')"><i class="fas fa-stethoscope"></i> Checks</button>
+            <button type="button" class="rem-filter" onclick="filterReminders('appointment')"><i class="fas fa-hospital"></i> Doctors</button>
+            <button type="button" class="rem-filter" onclick="filterReminders('exercise')"><i class="fas fa-person-walking"></i> Walks</button>
+          </div>
+
+          <!-- List Container -->
+          <div id="remindersList" class="reminders-list-cards"></div>
+
+          <!-- Empty State -->
+          <div id="remindersEmpty" class="reminders-empty-state card text-center" style="display:none; padding:48px 24px;">
+            <i class="fas fa-calendar-check" style="font-size:44px;color:#cbd5e1;margin-bottom:16px;"></i>
+            <h4 style="font-size:18px;font-weight:700;color:#334155;margin-bottom:6px;">Your Schedule is Clear</h4>
+            <p class="text-muted text-small" style="max-width:380px;margin:0 auto 18px;">You haven't scheduled any medications or appointments yet. Use the form on the left or tap any quick preset above to get started.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <img src="assets/logo-footer.png" alt="JeevanPrajna Official Logo" class="footer-logo-img" width="40" height="40" />
+            <span>JeevanPrajna</span>
+          </div>
+          <p class="footer-brand-desc">An independent, non-profit public information initiative providing clinically verified health guidance and emergency resources for Indian senior citizens.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Portal Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="health.html">Health & Medicines</a></li>
+            <li><a href="emergency.html">Emergency & SOS</a></li>
+            <li><a href="welfare.html">Welfare & Pensions</a></li>
+            <li><a href="community.html">Community & Clubs</a></li>
+            <li><a href="reminders.html">Daily Reminders</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Elder Assistance</div>
+          <ul class="footer-links-list">
+            <li><a href="emergency.html">Emergency Numbers (112)</a></li>
+            <li><a href="welfare.html#pmjay">Ayushman 70+ Card</a></li>
+            <li><a href="health.html#doctor-sheet">Print Doctor Sheet</a></li>
+            <li><a href="community.html#scam-protection">Pension Scam Protection</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Support Helplines</div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>14567</strong> — National Elder Helpline</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>112</strong> — National Emergency</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>104</strong> — State Medical Advice</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>1930</strong> — Cyber/Bank Fraud Hotline</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 JeevanPrajna &bull; Human-curated community initiative.</span>
+        <span>Local Reminders Engine · Zero Data Tracking</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/reminders.js"></script>
+</body>
+</html>

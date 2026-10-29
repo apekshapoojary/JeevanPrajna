@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JeevanPrajna — A non-profit public service initiative dedicated to wisdom, health, and dignity in elder life. Providing verified healthcare guidance, government pension schemes, emergency helplines, and social welfare support for Indian senior citizens." />
+  <title>JeevanPrajna | Senior Citizen Welfare & Healthcare Portal</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Institutional Bar -->
+  <div class="institutional-bar">
+    <div class="container">
+      <div class="inst-inner">
+        <div class="inst-left">
+          <span class="inst-flag"><i class="fas fa-flag"></i> An Independent Public Service Portal for Senior Citizens of India</span>
+        </div>
+        <div class="inst-right">
+          <span class="inst-contact"><i class="fas fa-phone-volume"></i> National Elder Helpline: <strong>14567</strong> (Toll-Free, 8 AM – 8 PM)</span>
+          <span class="inst-divider">|</span>
+          <span class="inst-contact"><i class="fas fa-ambulance"></i> Emergency: <strong>112</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="brand" aria-label="JeevanPrajna Homepage">
+          <img src="assets/logo.png" alt="JeevanPrajna Official Logo" class="brand-logo-img" width="48" height="48" />
+          <div>
+            <div class="brand-name">Jeevan<span>Prajna</span></div>
+            <div class="brand-tagline">National Elderly Care & Senior Citizens Portal</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="health.html" class="nav-link">Health & Medicines</a></li>
+            <li><a href="emergency.html" class="nav-link">Emergency & First Aid</a></li>
+            <li><a href="welfare.html" class="nav-link">Pensions & Schemes</a></li>
+            <li><a href="community.html" class="nav-link">Community & NGOs</a></li>
+            <li><a href="reminders.html" class="nav-link">Care Schedule</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="emergency.html" class="btn-sos" id="sosBtnNav" title="Immediate Emergency Help">
+            <i class="fas fa-phone-alt"></i> SOS 112
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Emergency Quick-Dial Ticker -->
+  <div class="helplines-strip" role="region" aria-label="Emergency Helplines">
+    <div class="container">
+      <div class="helplines-scroll">
+        <span class="hl-tag"><i class="fas fa-bolt"></i> Verified National Helplines:</span>
+        <a href="tel:112" class="hl-chip" title="National Emergency Response System">
+          <span class="hl-chip-num">112</span>
+          <span>National Emergency (Police, Fire, Ambulance)</span>
+          <span class="hl-chip-call">Dial</span>
+        </a>
+        <a href="tel:14567" class="hl-chip" title="Elder Line by Ministry of Social Justice">
+          <span class="hl-chip-num">14567</span>
+          <span>Elder Line (Govt. of India)</span>
+          <span class="hl-chip-call">Dial</span>
+        </a>
+        <a href="tel:108" class="hl-chip" title="Medical Emergency Ambulance">
+          <span class="hl-chip-num">108</span>
+          <span>Free Ambulance</span>
+          <span class="hl-chip-call">Dial</span>
+        </a>
+        <a href="tel:1930" class="hl-chip" title="Cyber Financial Fraud Helpline">
+          <span class="hl-chip-num">1930</span>
+          <span>Cyber Financial Fraud / Pension Scam</span>
+          <span class="hl-chip-call">Dial</span>
+        </a>
+        <a href="tel:14416" class="hl-chip" title="Tele-MANAS Mental Health Helpline">
+          <span class="hl-chip-num">14416</span>
+          <span>Tele-MANAS (Mental Health)</span>
+          <span class="hl-chip-call">Dial</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <i class="fas fa-check-shield"></i> Verified Public Information · Updated October 2026
+          </div>
+          <h1 class="hero-h1">
+            Dignified Living & Comprehensive Care for <span>India's Senior Citizens</span>
+          </h1>
+          <p class="hero-desc">
+            Navigating healthcare, government welfare schemes, pension rights, and emergency support shouldn't be difficult. JeevanPrajna connects elderly citizens and family caregivers with verified guidance based on official government notifications and ICMR clinical advisories.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="welfare.html" class="btn btn-primary">
+              <i class="fas fa-file-invoice-dollar"></i> Explore Pension & Welfare Schemes
+            </a>
+            <a href="health.html" class="btn btn-outline">
+              <i class="fas fa-notes-medical"></i> Geriatric Health & Drug Safety
+            </a>
+          </div>
+
+          <!-- Verified Key Indicators -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="hero-stat-num">138M+</span>
+              <span class="hero-stat-label">Senior Citizens across India (Age 60+)</span>
+              <span class="stat-source">Census & MoSJE Report</span>
+            </div>
+            <div class="stat-card">
+              <span class="hero-stat-num">₹5 Lakh</span>
+              <span class="hero-stat-label">Free Annual Health Cover for Seniors 70+</span>
+              <span class="stat-source">Ayushman Bharat Expansion</span>
+            </div>
+            <div class="stat-card">
+              <span class="hero-stat-num">100% Free</span>
+              <span class="hero-stat-label">Elder Line Assistance across 32 States/UTs</span>
+              <span class="stat-source">National Toll-Free 14567</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-col">
+          <div class="senior-desk-card">
+            <div class="sdc-header">
+              <div class="sdc-badge"><i class="fas fa-shield-halved"></i> Verified Citizen Services</div>
+              <h2 class="sdc-title">Senior Citizens Quick Action Desk</h2>
+              <p class="sdc-subtitle">Direct access to verified national programs, helplines & health tools</p>
+            </div>
+
+            <div class="sdc-items">
+              <a href="emergency.html" class="sdc-item emergency">
+                <div class="sdc-icon red"><i class="fas fa-phone-volume"></i></div>
+                <div class="sdc-info">
+                  <strong>National Emergency: Dial 112</strong>
+                  <span>Immediate police, medical ambulance & fire response (24/7)</span>
+                </div>
+                <i class="fas fa-arrow-right sdc-arrow"></i>
+              </a>
+
+              <a href="tel:14567" class="sdc-item elderline">
+                <div class="sdc-icon blue"><i class="fas fa-hands-holding-child"></i></div>
+                <div class="sdc-info">
+                  <strong>Elder Line Helpline: 14567</strong>
+                  <span>Toll-free government assistance for pensions, care & legal rights</span>
+                </div>
+                <i class="fas fa-arrow-right sdc-arrow"></i>
+              </a>
+
+              <a href="welfare.html#pmjay" class="sdc-item ayushman">
+                <div class="sdc-icon green"><i class="fas fa-id-card"></i></div>
+                <div class="sdc-info">
+                  <strong>Ayushman 70+ (₹5 Lakh Free Cover)</strong>
+                  <span>Every Indian senior aged 70+ eligible regardless of income</span>
+                </div>
+                <i class="fas fa-arrow-right sdc-arrow"></i>
+              </a>
+
+              <a href="health.html#medicine-search" class="sdc-item medicines">
+                <div class="sdc-icon amber"><i class="fas fa-prescription-bottle-medical"></i></div>
+                <div class="sdc-info">
+                  <strong>Jan Aushadhi Generic Drug Savings</strong>
+                  <span>Save 50% to 90% on BP, diabetes, thyroid & cardiac medicines</span>
+                </div>
+                <i class="fas fa-arrow-right sdc-arrow"></i>
+              </a>
+
+              <a href="health.html#doctor-sheet" class="sdc-item printable">
+                <div class="sdc-icon purple"><i class="fas fa-file-medical"></i></div>
+                <div class="sdc-info">
+                  <strong>Printable Doctor & Emergency Cards</strong>
+                  <span>Print wallet emergency identity card & doctor visit checklist</span>
+                </div>
+                <i class="fas fa-arrow-right sdc-arrow"></i>
+              </a>
+            </div>
+
+            <div class="sdc-footer">
+              <div class="sdc-verified-tag">
+                <i class="fas fa-shield-check"></i>
+                <span>Strictly Non-Commercial · Sourced from Official Government Gazettes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Matrix -->
+  <section class="section section-gray" id="services">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Essential Guidance</div>
+        <h2 class="section-title">What Would You Like to Find Today?</h2>
+        <p class="section-desc">Carefully structured guides, verified step-by-step application instructions, and safety information designed specifically for senior citizens and their families.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Emergency -->
+        <a href="emergency.html" class="service-card red" id="svcEmergency">
+          <div class="svc-icon red"><i class="fas fa-ambulance"></i></div>
+          <div class="svc-title">Emergency & First Aid</div>
+          <p class="svc-desc">Direct national numbers (112, 108, 14567), hospital protocols, stroke FAST checklist, and cardiac emergency first aid steps.</p>
+          <span class="svc-action">Open Emergency Guide <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Health & Medicines -->
+        <a href="health.html" class="service-card blue" id="svcHealth">
+          <div class="svc-icon blue"><i class="fas fa-pills"></i></div>
+          <div class="svc-title">Medication & Health Safety</div>
+          <p class="svc-desc">Common geriatric medications, generic Jan Aushadhi alternatives, drug-food interactions, and printable doctor appointment sheets.</p>
+          <span class="svc-action">Check Medicine Guide <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Welfare & Pensions -->
+        <a href="welfare.html" class="service-card amber" id="svcWelfare">
+          <div class="svc-icon amber"><i class="fas fa-landmark"></i></div>
+          <div class="svc-title">Government Welfare & Pensions</div>
+          <p class="svc-desc">IGNOAPS old-age pension, SCSS savings (8.2%), Ayushman Bharat 70+ cover, Rashtriya Vayoshri, and Senior Citizens Act rights.</p>
+          <span class="svc-action">View Scheme Directory <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Daily Routine -->
+        <a href="reminders.html" class="service-card purple" id="svcReminders">
+          <div class="svc-icon purple"><i class="fas fa-calendar-check"></i></div>
+          <div class="svc-title">Daily Medication Reminders</div>
+          <p class="svc-desc">Private, local medication and doctor appointment reminders that stay completely on your device without transmitting personal data.</p>
+          <span class="svc-action">Manage My Schedule <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Community & NGOs -->
+        <a href="community.html" class="service-card green" id="svcCommunity">
+          <div class="svc-icon green"><i class="fas fa-users-line"></i></div>
+          <div class="svc-title">NGOs & Senior Clubs</div>
+          <p class="svc-desc">Connect with verified eldercare organisations (HelpAge, Dignity Foundation), day care centres, walking groups, and caregiver circles.</p>
+          <span class="svc-action">Explore Support Groups <i class="fas fa-arrow-right"></i></span>
+        </a>
+
+        <!-- Legal Rights & Security -->
+        <a href="welfare.html#legal" class="service-card cyan" id="svcLegal">
+          <div class="svc-icon cyan"><i class="fas fa-scale-balanced"></i></div>
+          <div class="svc-title">Legal Rights & Scam Protection</div>
+          <p class="svc-desc">Know your legal rights under the Maintenance of Parents Act, how to report cyber/banking pension fraud, and free legal aid.</p>
+          <span class="svc-action">Learn Your Rights <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Major Policy Highlight: Ayushman Bharat 70+ -->
+  <section class="section" id="policy-alert">
+    <div class="container">
+      <div class="policy-spotlight">
+        <div class="policy-badge"><i class="fas fa-bullhorn"></i> Important Government Update</div>
+        <div class="policy-content">
+          <h3>Universal Ayushman Bharat PM-JAY Cover for All Seniors 70 Years & Above</h3>
+          <p>
+            Under the landmark central government expansion, <strong>every Indian citizen aged 70 years and older is eligible for up to ₹5,00,000 per year</strong> in free hospitalisation coverage on a family floater basis, regardless of their family income, caste, or economic status.
+          </p>
+          <ul class="policy-points">
+            <li><i class="fas fa-check-circle"></i> A separate Ayushman Vaya Vandana Card is issued to eligible beneficiaries aged 70+.</li>
+            <li><i class="fas fa-check-circle"></i> Covers pre-existing diseases from Day 1 at all empannelled public and private hospitals.</li>
+            <li><i class="fas fa-check-circle"></i> Requires only an Aadhaar card with verified date of birth for registration via the <code>beneficiary.nha.gov.in</code> portal.</li>
+          </ul>
+          <div class="policy-action">
+            <a href="welfare.html#pmjay" class="btn btn-primary"><i class="fas fa-id-card"></i> Read Complete Registration Guide</a>
+            <a href="https://beneficiary.nha.gov.in" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Official NHA Registration Portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Chronic Health Conditions & ICMR Guidance -->
+  <section class="section section-gray" id="health-overview">
+    <div class="container">
+      <div class="section-header flex-between">
+        <div>
+          <div class="section-tag">Clinical Wellness</div>
+          <h2 class="section-title">Common Age-Related Conditions in India</h2>
+          <p class="section-desc">Practical, non-technical guidance prepared in line with ICMR Geriatric Clinical Guidelines and AIIMS geriatric medicine advisories.</p>
+        </div>
+        <a href="health.html" class="view-all">View Health & Medicine Handbook <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="conditions-grid">
+        <div class="condition-card" id="cc1">
+          <div class="cond-icon"><i class="fas fa-heart-pulse"></i></div>
+          <div class="cond-name">Hypertension (High Blood Pressure)</div>
+          <p class="cond-desc">Target blood pressure for most seniors above 60 is generally around 130–139/80–89 mmHg. Avoid abrupt standing up to prevent orthostatic dizziness and falls.</p>
+          <div class="cond-footer">
+            <span class="cond-note"><i class="fas fa-stethoscope"></i> Check weekly with validated digital arm cuff</span>
+            <a href="health.html#hypertension" class="cond-link">Read Guidance <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="condition-card" id="cc2">
+          <div class="cond-icon"><i class="fas fa-droplet"></i></div>
+          <div class="cond-name">Type 2 Diabetes Mellitus</div>
+          <p class="cond-desc">Hypoglycemia (low blood sugar below 70 mg/dL) is far more dangerous than mild hyperglycemia in seniors. Learn the 15–15 rule: 15g quick sugar and recheck in 15 mins.</p>
+          <div class="cond-footer">
+            <span class="cond-note"><i class="fas fa-chart-line"></i> Target HbA1c: 7.0% – 7.5% for seniors</span>
+            <a href="health.html#diabetes" class="cond-link">Read Guidance <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="condition-card" id="cc3">
+          <div class="cond-icon"><i class="fas fa-bone"></i></div>
+          <div class="cond-name">Osteoarthritis & Knee Pain</div>
+          <p class="cond-desc">Affects nearly 60% of Indian seniors. Gentle quadriceps strengthening, low-impact walking, safe footwear, and non-narcotic pain management protect joint mobility.</p>
+          <div class="cond-footer">
+            <span class="cond-note"><i class="fas fa-walking"></i> Avoid long periods of continuous sitting</span>
+            <a href="health.html#arthritis" class="cond-link">Read Guidance <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="condition-card" id="cc4">
+          <div class="cond-icon"><i class="fas fa-brain"></i></div>
+          <div class="cond-name">Memory Loss & Dementia</div>
+          <p class="cond-desc">Normal age-related forgetting is misplacing keys; dementia is forgetting what keys are used for. Early clinical screening at district hospital memory clinics slows decline.</p>
+          <div class="cond-footer">
+            <span class="cond-note"><i class="fas fa-shield-halved"></i> Social engagement cuts risk by 40%</span>
+            <a href="health.html#dementia" class="cond-link">Read Guidance <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="condition-card" id="cc5">
+          <div class="cond-icon"><i class="fas fa-person-falling"></i></div>
+          <div class="cond-name">Fall Prevention at Home</div>
+          <p class="cond-desc">Falls are the leading cause of hip fractures and loss of independence. Installing bathroom grab bars, non-slip rubber mats, and nightlights prevents 75% of domestic falls.</p>
+          <div class="cond-footer">
+            <span class="cond-note"><i class="fas fa-house-medical"></i> High risk areas: Bathrooms & stairs</span>
+            <a href="health.html#fall-prevention" class="cond-link">Home Safety Checklist <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="condition-card" id="cc6">
+          <div class="cond-icon"><i class="fas fa-eye"></i></div>
+          <div class="cond-name">Cataracts & Vision Care</div>
+          <p class="cond-desc">Cataract surgery is free under the National Programme for Control of Blindness (NPCB) at government hospitals and district vision centres. Yearly dilated eye exams are vital.</p>
+          <div class="cond-footer">
+            <span class="cond-note"><i class="fas fa-glasses"></i> Annual screening prevents avoidable blindness</span>
+            <a href="health.html#vision" class="cond-link">Read Guidance <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Pension & Welfare Directory Preview -->
+  <section class="section" id="schemes-preview">
+    <div class="container">
+      <div class="section-header flex-between">
+        <div>
+          <div class="section-tag">Financial Security</div>
+          <h2 class="section-title">Verified Government Welfare Schemes</h2>
+          <p class="section-desc">Key social security programs, guaranteed pension schemes, and assistive equipment initiatives provided by Central and State Governments.</p>
+        </div>
+        <a href="welfare.html" class="view-all">View All 15+ Verified Schemes <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="schemes-grid">
+        <div class="scheme-card" id="sc1">
+          <div class="scheme-type-pill">Monthly Pension</div>
+          <div class="scheme-info">
+            <div class="scheme-name">IGNOAPS — National Old Age Pension</div>
+            <p class="scheme-desc">Monthly social assistance for BPL elderly aged 60+ (₹200/mo by Centre + State top-up typically raising it to ₹1,000–₹2,500/mo across states).</p>
+            <div class="scheme-meta-row">
+              <span><strong>Eligibility:</strong> Age 60+ & BPL</span>
+              <span><strong>Department:</strong> Ministry of Rural Development</span>
+            </div>
+            <a href="welfare.html#ignoaps" class="scheme-link">Eligibility & Documentation Checklist <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="scheme-card" id="sc2">
+          <div class="scheme-type-pill savings">Guaranteed Savings</div>
+          <div class="scheme-info">
+            <div class="scheme-name">Senior Citizen Savings Scheme (SCSS)</div>
+            <p class="scheme-desc">The highest yielding sovereign-backed investment for seniors (8.2% p.a. interest, paid quarterly). Maximum deposit ₹30 Lakh across Post Offices and banks.</p>
+            <div class="scheme-meta-row">
+              <span><strong>Interest Rate:</strong> 8.2% per annum</span>
+              <span><strong>Tax:</strong> Eligible for 80C rebate</span>
+            </div>
+            <a href="welfare.html#scss" class="scheme-link">Interest Calculator & Rules <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="scheme-card" id="sc3">
+          <div class="scheme-type-pill health">Free Equipment</div>
+          <div class="scheme-info">
+            <div class="scheme-name">Rashtriya Vayoshri Yojana (RVY)</div>
+            <p class="scheme-desc">Provides free physical aids and assisted-living devices (wheelchairs, walking frames, hearing aids, spectacles, tripod walking sticks) to seniors through ALIMCO camps.</p>
+            <div class="scheme-meta-row">
+              <span><strong>Aids:</strong> Free Hearing Aids & Walkers</span>
+              <span><strong>Agency:</strong> ALIMCO / MoSJE</span>
+            </div>
+            <a href="welfare.html#rvy" class="scheme-link">How to Apply & Find Camps <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="scheme-card" id="sc4">
+          <div class="scheme-type-pill legal">Legal Protection</div>
+          <div class="scheme-info">
+            <div class="scheme-name">Maintenance of Parents Act (2007)</div>
+            <p class="scheme-desc">A statutory framework enabling parents to claim monthly maintenance from children, seek summary eviction of abusive kin, and nullify gift deeds signed under coercion.</p>
+            <div class="scheme-meta-row">
+              <span><strong>Forum:</strong> Sub-Divisional Tribunal (SDM)</span>
+              <span><strong>Fee:</strong> Nil / Summary Procedure</span>
+            </div>
+            <a href="welfare.html#legal" class="scheme-link">Filing Procedure & Sample Application <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caregiver & Family Checklist -->
+  <section class="section section-gray" id="caregiver-guide">
+    <div class="container">
+      <div class="caregiver-banner">
+        <div class="caregiver-text">
+          <div class="section-tag green">Family Support</div>
+          <h2>Are You Caring for an Elderly Parent at Home?</h2>
+          <p>
+            Caring for senior parents requires balancing medical supervision, emotional empathy, and personal work life. We have prepared an 8-point caregiver checklist covering medication tracking, bathroom safety retrofits, legal nominations, and emergency preparedness.
+          </p>
+          <div class="caregiver-points">
+            <div class="cg-point"><i class="fas fa-check-circle"></i> Keep a laminated emergency contact sheet on the refrigerator door</div>
+            <div class="cg-point"><i class="fas fa-check-circle"></i> Organise medicines in weekly AM/PM compartmental dispenser boxes</div>
+            <div class="cg-point"><i class="fas fa-check-circle"></i> Ensure bank accounts and mutual funds have updated family nominations</div>
+            <div class="cg-point"><i class="fas fa-check-circle"></i> Check footwear for non-skid rubber soles to prevent slips</div>
+          </div>
+        </div>
+        <div class="caregiver-card">
+          <div class="cg-card-title"><i class="fas fa-file-pdf"></i> Printable Caregiver Tools</div>
+          <p>Download our free, non-commercial printable sheets designed for Indian households:</p>
+          <div class="cg-downloads">
+            <a href="health.html#doctor-sheet" class="cg-download-item">
+              <i class="fas fa-file-medical"></i>
+              <div>
+                <strong>Doctor Visit Preparation Sheet</strong>
+                <span>Symptoms, current medications & questions checklist</span>
+              </div>
+            </a>
+            <a href="emergency.html#medical-card" class="cg-download-item">
+              <i class="fas fa-id-card"></i>
+              <div>
+                <strong>Emergency Pocket Medical Card</strong>
+                <span>Blood group, allergies, conditions & family numbers</span>
+              </div>
+            </a>
+            <a href="reminders.html" class="cg-download-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Local Daily Routine Tracker</strong>
+                <span>Set medication reminders that stay on this browser</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Government & Institutional Portals Directory -->
+  <section class="section" id="official-directory">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Direct Official Links</div>
+        <h2 class="section-title">Government Portals Directory</h2>
+        <p class="section-desc">Direct access to official Government of India portals for pension tracking, Ayushman cards, life certificate submission, and digital grievance redressal.</p>
+      </div>
+
+      <div class="portal-grid">
+        <a href="https://jeevanpramaan.gov.in" target="_blank" rel="noopener" class="portal-card">
+          <div class="portal-icon"><i class="fas fa-fingerprint"></i></div>
+          <div class="portal-name">Jeevan Pramaan Portal</div>
+          <p class="portal-desc">Submit Digital Life Certificate (DLC) using face recognition or biometric device without visiting the bank or post office.</p>
+          <span class="portal-link">jeevanpramaan.gov.in <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="https://beneficiary.nha.gov.in" target="_blank" rel="noopener" class="portal-card">
+          <div class="portal-icon"><i class="fas fa-id-card-clip"></i></div>
+          <div class="portal-name">Ayushman Bharat Portal (NHA)</div>
+          <p class="portal-desc">Register for the ₹5 Lakh Ayushman Vaya Vandana Card for seniors aged 70+, download cards, and check empannelled hospitals.</p>
+          <span class="portal-link">beneficiary.nha.gov.in <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="https://nsap.nic.in" target="_blank" rel="noopener" class="portal-card">
+          <div class="portal-icon"><i class="fas fa-coins"></i></div>
+          <div class="portal-name">NSAP Pension Portal</div>
+          <p class="portal-desc">Track Indira Gandhi National Old Age Pension application status, sanction orders, and state-wise disbursement lists.</p>
+          <span class="portal-link">nsap.nic.in <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="https://pensionersportal.gov.in" target="_blank" rel="noopener" class="portal-card">
+          <div class="portal-icon"><i class="fas fa-building-columns"></i></div>
+          <div class="portal-name">Central Pensioners' Portal</div>
+          <p class="portal-desc">Department of Pension & Pensioners' Welfare (DoPPW) portal for central government retirees, CPENGRAMS grievance redressal.</p>
+          <span class="portal-link">pensionersportal.gov.in <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="https://janaushadhi.gov.in" target="_blank" rel="noopener" class="portal-card">
+          <div class="portal-icon"><i class="fas fa-prescription-bottle-medical"></i></div>
+          <div class="portal-name">PM Jan Aushadhi Pariyojana</div>
+          <p class="portal-desc">Locate your nearest Jan Aushadhi Kendra offering quality generic medicines at 50% to 90% savings compared to branded drugs.</p>
+          <span class="portal-link">janaushadhi.gov.in <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" class="portal-card">
+          <div class="portal-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="portal-name">National Cyber Crime Portal</div>
+          <p class="portal-desc">Report pension verification scams, electricity bill fraud, digital arrest calls, or unauthorised bank account debits.</p>
+          <span class="portal-link">cybercrime.gov.in <i class="fas fa-external-link-alt"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <img src="assets/logo-footer.png" alt="JeevanPrajna Official Logo" class="footer-logo-img" width="40" height="40" />
+            <span>JeevanPrajna</span>
+          </div>
+          <p class="footer-brand-desc">
+            An independent, non-commercial public interest initiative providing verified health information, social welfare guidance, and emergency resources for senior citizens of India and their family caregivers.
+          </p>
+          <div class="footer-certs">
+            <span class="footer-cert"><i class="fas fa-shield-check"></i> Based on Official Ministry Notifications</span>
+            <span class="footer-cert"><i class="fas fa-shield-check"></i> Aligned with ICMR Geriatric Guidelines</span>
+            <span class="footer-cert"><i class="fas fa-shield-check"></i> Strictly Non-Commercial & Open Access</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Portal Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="health.html">Health & Medicines Guide</a></li>
+            <li><a href="emergency.html">Emergency & SOS Numbers</a></li>
+            <li><a href="welfare.html">Pensions & Welfare Schemes</a></li>
+            <li><a href="community.html">NGOs & Support Circles</a></li>
+            <li><a href="reminders.html">Daily Medication Reminders</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Key Government Portals</div>
+          <ul class="footer-links-list">
+            <li><a href="https://socialjustice.gov.in" target="_blank" rel="noopener">Ministry of Social Justice (MoSJE)</a></li>
+            <li><a href="https://mohfw.gov.in" target="_blank" rel="noopener">Ministry of Health & Family Welfare</a></li>
+            <li><a href="https://nsap.nic.in" target="_blank" rel="noopener">National Social Assistance (NSAP)</a></li>
+            <li><a href="https://beneficiary.nha.gov.in" target="_blank" rel="noopener">Ayushman Bharat PM-JAY</a></li>
+            <li><a href="https://pfrda.org.in" target="_blank" rel="noopener">PFRDA (Pension Regulatory Authority)</a></li>
+            <li><a href="https://janaushadhi.gov.in" target="_blank" rel="noopener">Pradhan Mantri Jan Aushadhi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Toll-Free Emergency Contacts</div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>112</strong> — National Unified Emergency</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>14567</strong> — Elder Line (MoSJE Toll-Free)</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>108</strong> — Medical Ambulance Service</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>1930</strong> — Cyber Financial Fraud Helpline</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>14416</strong> — Tele-MANAS Mental Health</span></div>
+          <p class="footer-legal">
+            <strong>Medical & Legal Disclaimer:</strong> All content is provided solely for educational and informational purposes. It does not substitute for qualified clinical consultation or formal legal counsel. Always consult a registered medical practitioner (MBBS/MD) for health symptoms, and verify scheme circulars with respective district welfare offices.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 JeevanPrajna · Wisdom & Dignity for India's Seniors.</span>
+        <span>Public Information Resource · Compliant with Digital Personal Data Protection (DPDP) Act 2023</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

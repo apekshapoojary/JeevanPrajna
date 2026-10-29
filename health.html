@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JeevanPrajna Geriatric Health Guide — Verified medication dosages, Jan Aushadhi generic pricing, food-drug interactions, ICMR senior BMI calculator, and chronic illness management for senior citizens." />
+  <title>Health & Medicines Handbook | JeevanPrajna</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/health.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Institutional Bar -->
+  <div class="institutional-bar">
+    <div class="container">
+      <div class="inst-inner">
+        <div class="inst-left">
+          <span class="inst-flag"><i class="fas fa-notes-medical"></i> Geriatric Drug Safety & Clinical Care Reference</span>
+        </div>
+        <div class="inst-right">
+          <span class="inst-contact"><i class="fas fa-pills"></i> Pradhan Mantri Jan Aushadhi: <strong>1800-180-8080</strong></span>
+          <span class="inst-divider">|</span>
+          <span class="inst-contact"><i class="fas fa-phone-alt"></i> Medical Advice Helpline: <strong>104</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="JeevanPrajna Official Logo" class="brand-logo-img" width="48" height="48" />
+          <div>
+            <div class="brand-name">Jeevan<span>Prajna</span></div>
+            <div class="brand-tagline">National Elderly Care & Senior Citizens Portal</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="health.html" class="nav-link active">Health & Medicines</a></li>
+            <li><a href="emergency.html" class="nav-link">Emergency & First Aid</a></li>
+            <li><a href="welfare.html" class="nav-link">Pensions & Schemes</a></li>
+            <li><a href="community.html" class="nav-link">Community & NGOs</a></li>
+            <li><a href="reminders.html" class="nav-link">Care Schedule</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="emergency.html" class="btn-sos" id="sosBtnNav"><i class="fas fa-phone-alt"></i> SOS 112</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <div>
+          <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Health & Medicines</div>
+          <h1 class="page-title">Geriatric Health & Medication Safety</h1>
+          <p class="page-desc">Human-verified prescribing guidance, generic Jan Aushadhi cost comparisons, clinical food-drug rules, and ICMR senior nutrition tools.</p>
+        </div>
+        <div class="page-header-badge">
+          <i class="fas fa-clipboard-check"></i> CDSCO & ICMR Aligned
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Medication Search Section -->
+  <section class="section" id="medicine-search">
+    <div class="container">
+      <div class="health-search-box">
+        <div class="section-tag">Prescription Directory</div>
+        <h2 class="section-title mb-2">Search Common Senior Medications in India</h2>
+        <p class="text-muted mb-4">Look up standard dosages, official Jan Aushadhi generic savings, critical geriatric safety warnings, and drug-food interactions.</p>
+
+        <div class="med-search-row">
+          <div class="med-search-input-wrap">
+            <i class="fas fa-search med-search-icon"></i>
+            <input type="text" id="medSearchInput" class="form-input med-search-input" placeholder="Type generic name or brand: e.g. Metformin, Telma, Amlong, Ecosprin, Thyronorm, Pan 40..." />
+          </div>
+          <button type="button" class="btn btn-primary" id="medSearchBtn" onclick="searchMedicine()">
+            <i class="fas fa-search"></i> Search Drug Info
+          </button>
+        </div>
+
+        <div class="med-quick-searches">
+          <span class="text-muted text-small fw-bold">Common Inquiries:</span>
+          <button type="button" class="quick-pill" onclick="fillSearch('Metformin')">Metformin (Diabetes)</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Amlodipine')">Amlodipine (BP)</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Telmisartan')">Telmisartan (BP)</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Atorvastatin')">Atorvastatin (Cholesterol)</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Aspirin')">Ecosprin / Aspirin</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Pantoprazole')">Pantoprazole (Acidity)</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Thyronorm')">Thyronorm (Thyroid)</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Calcium')">Shelcal / Calcium</button>
+          <button type="button" class="quick-pill" onclick="fillSearch('Paracetamol')">Dolo 650 / Paracetamol</button>
+        </div>
+
+        <!-- Dynamic Results Area -->
+        <div id="medResult" class="med-result-area" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jan Aushadhi Cost Savings Banner -->
+  <section class="section section-gray" id="jan-aushadhi">
+    <div class="container">
+      <div class="janaushadhi-card">
+        <div class="ja-icon"><i class="fas fa-store-alt"></i></div>
+        <div class="ja-content">
+          <h3>Save 50% to 90% on Chronic Medicines via Pradhan Mantri Jan Aushadhi</h3>
+          <p>
+            Under the PMBJP initiative, the Government of India operates over 10,000+ certified Jan Aushadhi Kendras across the country. They sell high-grade WHO-GMP certified generic medicines for blood pressure, diabetes, heart conditions, and thyroid at a fraction of branded costs.
+          </p>
+          <div class="ja-grid">
+            <div class="ja-stat">
+              <strong>₹15 vs ₹80</strong>
+              <span>Metformin 500mg (10 tabs)</span>
+            </div>
+            <div class="ja-stat">
+              <strong>₹10 vs ₹50</strong>
+              <span>Amlodipine 5mg (10 tabs)</span>
+            </div>
+            <div class="ja-stat">
+              <strong>₹18 vs ₹100</strong>
+              <span>Telmisartan 40mg (10 tabs)</span>
+            </div>
+            <div class="ja-stat">
+              <strong>₹25 vs ₹180</strong>
+              <span>Thyroxine 50mcg (100 tabs)</span>
+            </div>
+          </div>
+          <div class="ja-action mt-4">
+            <a href="https://janaushadhi.gov.in" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-map-marker-alt"></i> Locate Nearest Jan Aushadhi Kendra</a>
+            <span class="ja-tollfree"><i class="fas fa-phone-alt"></i> Jan Aushadhi Toll-Free: <strong>1800-180-8080</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seven Golden Rules for Safe Senior Medication -->
+  <section class="section" id="drug-safety-rules">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Clinical Pharmacology Rules</div>
+        <h2 class="section-title">7 Golden Rules of Safe Medication in Seniors</h2>
+        <p class="section-desc">Aging alters liver metabolism and kidney clearance. Follow these evidence-backed safeguards to avoid adverse drug reactions and dangerous drug interactions.</p>
+      </div>
+
+      <div class="safety-rules-grid">
+        <div class="safety-rule-card">
+          <div class="sr-num">01</div>
+          <div class="sr-content">
+            <h4>Never Stop Heart or BP Pills Abruptly</h4>
+            <p>Suddenly stopping BP tablets like Telmisartan or Beta-blockers causes dangerous rebound hypertension and triggers stroke risk. Always consult your doctor before modifying doses.</p>
+          </div>
+        </div>
+
+        <div class="safety-rule-card">
+          <div class="sr-num">02</div>
+          <div class="sr-content">
+            <h4>Strict Timing for Thyroid & Acidity Tablets</h4>
+            <p>Levothyroxine (Thyronorm) must be taken alone with plain water at least 45 minutes before morning tea or milk. Never take Calcium or Iron pills with thyroid medicine (keep a 4-hour gap).</p>
+          </div>
+        </div>
+
+        <div class="safety-rule-card">
+          <div class="sr-num">03</div>
+          <div class="sr-content">
+            <h4>Beware of OTC Painkillers (NSAIDs)</h4>
+            <p>Over-the-counter painkillers like Combiflam, Brufen, and Diclofenac can cause rapid kidney damage, worsen blood pressure, and cause stomach ulcers in seniors. Prefer safe Paracetamol (Dolo 650) for joint pain.</p>
+          </div>
+        </div>
+
+        <div class="safety-rule-card">
+          <div class="sr-num">04</div>
+          <div class="sr-content">
+            <h4>Use a 7-Day AM/PM Pill Dispenser Box</h4>
+            <p>Accidental double-dosing or forgotten pills are the #1 cause of emergency hospital visits in older adults. A simple compartmental pill organizer with morning, noon, and night slots eliminates confusion.</p>
+          </div>
+        </div>
+
+        <div class="safety-rule-card">
+          <div class="sr-num">05</div>
+          <div class="sr-content">
+            <h4>Know the 15-15 Rule for Low Blood Sugar</h4>
+            <p>If a senior taking diabetes medicines feels shaky, sweaty, confused, or unusually drowsy, immediately give 15 grams of fast-acting sugar (3 teaspoons of sugar dissolved in water, or fruit juice), wait 15 minutes, and retest.</p>
+          </div>
+        </div>
+
+        <div class="safety-rule-card">
+          <div class="sr-num">06</div>
+          <div class="sr-content">
+            <h4>Monitor Kidney Function (Creatinine / eGFR)</h4>
+            <p>Many common drugs (Metformin, BP medicines) require lower doses if kidney clearance decreases. Seniors with diabetes or hypertension should have a Serum Creatinine and eGFR test performed every 6 months.</p>
+          </div>
+        </div>
+
+        <div class="safety-rule-card">
+          <div class="sr-num">07</div>
+          <div class="sr-content">
+            <h4>Inform Doctors About All Supplements & Ayurvedic Formulations</h4>
+            <p>Ayurvedic powders, herbal formulations, and unlabelled churnas can interact with blood thinners and strain liver function. Always carry the exact packaging to your physician.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evidence-Based Senior BMI & Nutrition Calculator -->
+  <section class="section section-gray" id="bmi">
+    <div class="container">
+      <div class="bmi-section-layout">
+        <div class="bmi-form-col">
+          <div class="section-tag green">Nutritional Assessment</div>
+          <h2 class="section-title">ICMR Senior BMI Calculator</h2>
+          <p class="section-desc">Healthy body mass index for adults aged 60+ is clinically different from young adults. Calculate your score based on Indian geriatric standards.</p>
+
+          <form id="bmiForm" onsubmit="event.preventDefault(); calculateBMI();" class="bmi-form card">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="bmiHeight">Height (in cm) *</label>
+                <input type="number" id="bmiHeight" class="form-input" placeholder="e.g. 165" required min="100" max="220" />
+                <span class="form-hint">Tip: 5 ft 4 in = ~163 cm</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bmiWeight">Weight (in kg) *</label>
+                <input type="number" id="bmiWeight" class="form-input" placeholder="e.g. 64" required min="25" max="200" step="0.5" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="bmiAge">Age (Years)</label>
+              <input type="number" id="bmiAge" class="form-input" placeholder="e.g. 68" value="65" min="50" max="110" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              <i class="fas fa-calculator"></i> Calculate Senior BMI & Get Clinical Guidance
+            </button>
+          </form>
+
+          <div id="bmiResult" class="bmi-result-area" style="display:none; margin-top:20px;"></div>
+        </div>
+
+        <div class="bmi-info-col">
+          <div class="icmr-guidelines-box card">
+            <h3><i class="fas fa-apple-whole"></i> ICMR Dietary Targets for Indian Seniors</h3>
+            <ul class="dietary-checklist">
+              <li>
+                <strong>Protein is Priority:</strong> Aim for 1.0 to 1.2 grams of protein per kilogram of body weight daily (e.g. 60g for a 60kg adult) to prevent muscle wasting (sarcopenia). Include curd, paneer, cooked dal, eggs, sattu, or sprouts.
+              </li>
+              <li>
+                <strong>Hydration Awareness:</strong> The thirst sensation naturally weakens with age. Drink at least 1.5 to 2 litres (6–8 glasses) of clean water daily unless restricted by your kidney or heart specialist.
+              </li>
+              <li>
+                <strong>Dietary Salt Limit:</strong> Keep salt under 5 grams (1 teaspoon) per day across all curries, dals, and pickles to protect vascular elasticity and prevent fluid buildup.
+              </li>
+              <li>
+                <strong>Calcium & Sun Exposure:</strong> 15 minutes of early morning sun exposure helps synthesize natural Vitamin D for bone density and joint cushioning.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Printable Caregiver Tools: Doctor Preparation Sheet & Emergency Card -->
+  <section class="section" id="doctor-sheet">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Household Printable Tools</div>
+        <h2 class="section-title">Senior Healthcare Practical Checklists</h2>
+        <p class="section-desc">Downloadable, clean printable templates formatted to fit in a wallet or hang on the refrigerator door.</p>
+      </div>
+
+      <div class="tools-grid">
+        <!-- Tool 1: Doctor Visit Sheet -->
+        <div class="tool-card card">
+          <div class="tool-icon"><i class="fas fa-stethoscope"></i></div>
+          <h3>Doctor Visit Preparation Sheet</h3>
+          <p>Doctors often have only 10–15 minutes per consultation. Using a structured sheet ensures no critical symptom or drug reaction is missed.</p>
+          <ul class="tool-checklist">
+            <li><i class="fas fa-check"></i> List of top 3 primary complaints in order of discomfort</li>
+            <li><i class="fas fa-check"></i> Complete log of all current daily pills with brand and dosage</li>
+            <li><i class="fas fa-check"></i> Recent morning blood pressure readings and fasting sugar log</li>
+            <li><i class="fas fa-check"></i> Any new allergies, digestion issues, or recent dizzy episodes</li>
+          </ul>
+          <button type="button" class="btn btn-outline btn-sm mt-3" onclick="window.print()">
+            <i class="fas fa-print"></i> Print This Page / Preparation Sheet
+          </button>
+        </div>
+
+        <!-- Tool 2: Medical Wallet Card -->
+        <div class="tool-card card" id="medical-card">
+          <div class="tool-icon red"><i class="fas fa-address-card"></i></div>
+          <h3>Senior Emergency Pocket Card</h3>
+          <p>A pocket card carried in a wallet or handbag saves vital minutes if an elderly family member feels faint or has an accident away from home.</p>
+          <div class="sample-card-preview">
+            <div class="sc-header">EMERGENCY MEDICAL IDENTITY</div>
+            <div class="sc-body">
+              <div><strong>Name:</strong> [Senior Citizen Name]</div>
+              <div><strong>Blood Group:</strong> [e.g. B Positive] | <strong>Age:</strong> [68]</div>
+              <div><strong>Chronic Conditions:</strong> Diabetes, High Blood Pressure</div>
+              <div><strong>Daily Blood Thinners:</strong> Aspirin 75mg</div>
+              <div><strong>Drug Allergies:</strong> Penicillin / Sulpha</div>
+              <div class="sc-contacts">
+                <strong>Emergency Family Calls:</strong> Son / Daughter: 98XXXXXXXX
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm mt-3" onclick="window.print()">
+            <i class="fas fa-print"></i> Print Wallet Template
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <img src="assets/logo-footer.png" alt="JeevanPrajna Official Logo" class="footer-logo-img" width="40" height="40" />
+            <span>JeevanPrajna</span>
+          </div>
+          <p class="footer-brand-desc">A non-profit public information initiative providing clinically verified geriatric health guidance and official welfare resources for Indian seniors.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Portal Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="health.html">Health & Medicines</a></li>
+            <li><a href="emergency.html">Emergency & SOS</a></li>
+            <li><a href="welfare.html">Welfare & Pensions</a></li>
+            <li><a href="community.html">Community & Clubs</a></li>
+            <li><a href="reminders.html">Daily Reminders</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Official Medical Portals</div>
+          <ul class="footer-links-list">
+            <li><a href="https://janaushadhi.gov.in" target="_blank" rel="noopener">Pradhan Mantri Jan Aushadhi</a></li>
+            <li><a href="https://cdsco.gov.in" target="_blank" rel="noopener">CDSCO Drug Regulatory Authority</a></li>
+            <li><a href="https://main.icmr.nic.in" target="_blank" rel="noopener">ICMR Geriatric Guidelines</a></li>
+            <li><a href="https://beneficiary.nha.gov.in" target="_blank" rel="noopener">Ayushman Bharat 70+</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Medical Helplines</div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>104</strong> — State Medical Advice Service</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>108</strong> — Emergency Ambulance</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>1800-180-8080</strong> — Jan Aushadhi Support</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i> <span><strong>14567</strong> — National Elder Helpline</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 JeevanPrajna &bull; Designed for human dignity and senior safety.</span>
+        <span>Information is for educational guidance only and does not replace consultation with a registered medical specialist.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/health.js"></script>
+</body>
+</html>

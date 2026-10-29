@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-label="JeevanPrajna Logo">
+  <defs>
+    <!-- Base Deep Sapphire Gradient -->
+    <linearGradient id="jpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142850" />
+      <stop offset="45%" stop-color="#0c1b33" />
+      <stop offset="100%" stop-color="#050c18" />
+    </linearGradient>
+
+    <!-- Regal Gold Gradient for Rim & Accents -->
+    <linearGradient id="jpGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Prajna: Sacred Flame of Wisdom & Enlightenment -->
+    <linearGradient id="jpFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="30%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fffbeb" />
+    </linearGradient>
+
+    <!-- Jeevan: Heart of Life & Compassionate Care -->
+    <linearGradient id="jpHeart" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+
+    <!-- Subtle Radial Aura -->
+    <radialGradient id="jpAura" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#1e3a8a" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0c1b33" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Drop Shadow for Depth -->
+    <filter id="jpShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Emblem Container -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#jpBg)" />
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#jpAura)" />
+  
+  <!-- Outer Gold Inset Filigree Border -->
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="none" stroke="url(#jpGold)" stroke-width="1.2" stroke-opacity="0.8" />
+  
+  <!-- Inner Delicate Concentric Circle -->
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#60a5fa" stroke-width="0.75" stroke-dasharray="2 3" stroke-opacity="0.3" />
+
+  <!-- 1. PRAJNA: Radiant Flame of Wisdom (Rises gracefully at top center) -->
+  <g filter="url(#jpShadow)">
+    <!-- Outer Flame Body -->
+    <path d="M 32 7.5
+             C 35 12, 38.5 16, 38.5 20.5
+             C 38.5 24.5, 35.5 27, 32 27
+             C 28.5 27, 25.5 24.5, 25.5 20.5
+             C 25.5 16, 29 12, 32 7.5 Z"
+          fill="url(#jpFlame)" />
+    
+    <!-- Luminous White Core of Truth/Insight -->
+    <path d="M 32 11.5
+             C 33.6 14.5, 35.5 17, 35.5 20.5
+             C 35.5 22.8, 34 24.5, 32 24.5
+             C 30 24.5, 28.5 22.8, 28.5 20.5
+             C 28.5 17, 30.4 14.5, 32 11.5 Z"
+          fill="#ffffff" opacity="0.95" />
+  </g>
+
+  <!-- 2. JEEVAN: Compassionate Heart of Life & Health -->
+  <g filter="url(#jpShadow)">
+    <path d="M 32 41
+             C 31.2 41, 16.5 31.5, 16.5 23
+             C 16.5 18.2, 20.5 15, 25.2 15
+             C 28.2 15, 30.5 16.8, 32 18.8
+             C 33.5 16.8, 35.8 15, 38.8 15
+             C 43.5 15, 47.5 18.2, 47.5 23
+             C 47.5 31.5, 32.8 41, 32 41 Z"
+          fill="url(#jpHeart)" />
+  </g>
+
+  <!-- 3. MEDICAL CROSS: Clinical Care & Senior Health (Crisp Pure White) -->
+  <rect x="29.75" y="20.5" width="4.5" height="11" rx="1.2" fill="#ffffff" />
+  <rect x="26.5" y="23.75" width="11" height="4.5" rx="1.2" fill="#ffffff" />
+
+  <!-- 4. SUPPORTING HANDS: Dignity, Care & Respect for Elders -->
+  <!-- Left Hand (Graceful palm supporting from below left) -->
+  <path d="M 11 46
+           C 14 39, 20.5 36.5, 26 39
+           C 23.5 42, 19.5 44.5, 15 47
+           C 13 47.8, 11.8 47.5, 11 46 Z"
+        fill="#f8fafc" />
+  <path d="M 14.5 50.5
+           C 18.5 45.5, 25 45, 30.5 47.5
+           C 26.5 50.5, 21 53.5, 16.5 54
+           C 15 53.5, 14.5 52, 14.5 50.5 Z"
+        fill="#cbd5e1" />
+
+  <!-- Right Hand (Graceful palm supporting from below right) -->
+  <path d="M 53 46
+           C 50 39, 43.5 36.5, 38 39
+           C 40.5 42, 44.5 44.5, 49 47
+           C 51 47.8, 52.2 47.5, 53 46 Z"
+        fill="#f8fafc" />
+  <path d="M 49.5 50.5
+           C 45.5 45.5, 39 45, 33.5 47.5
+           C 37.5 50.5, 43 53.5, 47.5 54
+           C 49 53.5, 49.5 52, 49.5 50.5 Z"
+        fill="#cbd5e1" />
+
+  <!-- 5. DIYA BASE / GOLDEN ANCHOR: Grounded in Indian Tradition & Family Unity -->
+  <ellipse cx="32" cy="51.5" rx="3.5" ry="2" fill="url(#jpGold)" />
+  <circle cx="32" cy="51.5" r="1.2" fill="#fffbeb" />
+</svg>

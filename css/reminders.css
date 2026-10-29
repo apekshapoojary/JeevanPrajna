@@ -1,0 +1,239 @@
+/* ============================================================
+   reminders.css — Daily Care Schedule & Medication Tracker
+   JeevanPrajna Senior Care Portal
+   ============================================================ */
+
+/* Presets Card */
+.quick-presets-card {
+  background: #ffffff;
+  border: 1.5px solid #e0e7ff;
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.qpc-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.qpc-header i {
+  font-size: 20px;
+  color: var(--primary-light);
+}
+.qpc-header strong {
+  font-size: 14.5px;
+  color: var(--slate-dark);
+}
+
+.qpc-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preset-chip {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+.preset-chip:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: var(--primary);
+}
+.preset-chip i {
+  color: var(--primary-light);
+}
+
+/* Layout */
+.reminders-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.reminders-list-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.rem-filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.rem-filters-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.rem-filter {
+  background: #f1f5f9;
+  border: 1px solid var(--slate-border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.15s ease;
+}
+.rem-filter:hover {
+  background: #e2e8f0;
+  color: var(--primary);
+}
+.rem-filter.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* Reminder Cards */
+.reminders-list-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.reminder-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.15s ease;
+}
+.reminder-card:hover {
+  box-shadow: var(--shadow-card);
+  border-color: #cbd5e1;
+}
+
+.rem-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.rem-icon.medication { background: #eff6ff; color: #1d4ed8; }
+.rem-icon.appointment { background: #fef2f2; color: #dc2626; }
+.rem-icon.checkup { background: #f0fdf4; color: #16a34a; }
+.rem-icon.exercise { background: #fef3c7; color: #d97706; }
+.rem-icon.other { background: #f5f3ff; color: #7c3aed; }
+
+.rem-details {
+  flex: 1;
+}
+
+.rem-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.rem-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--slate-dark);
+}
+
+.rem-type-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 2px 7px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+}
+
+.rem-time-row {
+  font-size: 12.5px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.rem-time-row strong {
+  color: var(--primary);
+  font-size: 13px;
+}
+
+.rem-date-divider {
+  color: #cbd5e1;
+}
+
+.rem-badge-freq {
+  background: #eff6ff;
+  color: var(--primary-light);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+.rem-notes {
+  font-size: 12px;
+  color: var(--slate-muted);
+  line-height: 1.5;
+  background: #f8fafc;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rem-delete {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+.rem-delete:hover {
+  color: var(--danger);
+  background: #fee2e2;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .reminders-layout { grid-template-columns: 1fr; }
+}

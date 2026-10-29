@@ -1,0 +1,422 @@
+/* ============================================================
+   community.css — Community, NGO Networks & Scam Protection
+   JeevanPrajna Senior Care Portal
+   ============================================================ */
+
+/* Community Stats Row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.community-stat-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-lg);
+  padding: 26px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.csc-num {
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.csc-label {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--slate-dark);
+  margin-bottom: 8px;
+}
+
+.csc-source {
+  font-size: 11px;
+  color: var(--slate-muted);
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+/* Filter & Search Bar */
+.community-filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.community-search-box {
+  position: relative;
+  width: 100%;
+}
+
+.community-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.community-search-input {
+  padding-left: 42px !important;
+  font-size: 14.5px !important;
+  border-color: #cbd5e1 !important;
+}
+
+.community-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.comm-tab {
+  background: #f1f5f9;
+  border: 1px solid var(--slate-border);
+  color: #475569;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.comm-tab:hover {
+  background: #e2e8f0;
+  color: var(--primary);
+}
+.comm-tab.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* Groups Grid */
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.group-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+.group-card:hover {
+  border-color: #93c5fd;
+  box-shadow: var(--shadow-card);
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.group-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.group-icon.green { background: #dcfce7; color: var(--success); }
+.group-icon.blue { background: #eff6ff; color: var(--primary); }
+.group-icon.amber { background: #fef3c7; color: var(--secondary); }
+.group-icon.purple { background: #f5f3ff; color: #7c3aed; }
+.group-icon.red { background: #fee2e2; color: var(--danger); }
+.group-icon.cyan { background: #e0f2fe; color: #0284c7; }
+
+.group-category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--slate-muted);
+  margin-bottom: 2px;
+}
+
+.group-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--slate-dark);
+}
+
+.group-desc {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.group-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.group-tag {
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.group-action {
+  border-top: 1px solid var(--slate-border);
+  padding-top: 14px;
+  font-size: 12.5px;
+}
+
+.ngo-web-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.ngo-web-link:hover {
+  text-decoration: underline;
+}
+
+.ngo-contact-row {
+  color: #334155;
+  font-size: 12px;
+}
+
+/* Scam Guide Card */
+.scam-guide-card {
+  background: #ffffff;
+  border: 2px solid #fecaca;
+  padding: 36px;
+}
+
+.scam-guide-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--slate-border);
+}
+
+.sgh-icon {
+  width: 56px;
+  height: 56px;
+  background: #fee2e2;
+  color: var(--danger);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.scam-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.scam-rule {
+  background: #f8fafc;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scam-rule h4 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--slate-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scam-rule p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Mental Health Cards */
+.mh-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.mh-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+.mh-card:hover {
+  border-color: #93c5fd;
+  box-shadow: var(--shadow-card);
+}
+
+.mh-num {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.mh-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--slate-dark);
+  margin-bottom: 8px;
+}
+
+.mh-desc {
+  font-size: 12.5px;
+  color: var(--slate-muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.mh-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #f1f5f9;
+  color: var(--slate-muted);
+  padding: 3px 8px;
+  border-radius: 4px;
+  align-self: center;
+}
+
+/* Modal */
+.community-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.community-modal {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--slate-border);
+  background: #f8fafc;
+}
+
+.modal-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--slate-dark);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #64748b;
+  cursor: pointer;
+  line-height: 1;
+}
+.modal-close:hover {
+  color: #0f172a;
+}
+
+.modal-body {
+  padding: 20px 24px;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #f8fafc;
+  border-top: 1px solid var(--slate-border);
+}
+
+/* Toast */
+.community-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--slate-dark);
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: var(--radius-md);
+  font-size: 13.5px;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 420px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .groups-grid { grid-template-columns: repeat(2, 1fr); }
+  .scam-rules-grid { grid-template-columns: 1fr; }
+  .mh-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .stats-row { grid-template-columns: 1fr; }
+  .groups-grid { grid-template-columns: 1fr; }
+  .mh-grid { grid-template-columns: 1fr; }
+  .community-tabs { overflow-x: auto; flex-wrap: nowrap; }
+  .comm-tab { white-space: nowrap; flex-shrink: 0; }
+}
